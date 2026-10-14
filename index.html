@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>小困插件工坊 · DSH 女仆插件总览</title>
+<meta name="description" content="DeepSeek Harness 的小困（女仆）插件总览：女仆预设与记忆、VCP 视觉通感渲染、深海女仆工坊、ComfyUI 驱动、朗读维护层。装一个包，走到哪都是小困。">
+<meta property="og:title" content="小困插件工坊">
+<meta property="og:description" content="DeepSeek Harness 的小困插件总览：人设、记忆、视觉、生成、维护。">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a1428'/%3E%3Cpath d='M16 24c-5 0-8-3.4-8-7.6C8 12.4 11.6 9 16 9s8 3.4 8 7.4C24 20.6 21 24 16 24z' fill='%23526aa8'/%3E%3Ccircle cx='13' cy='16' r='1.2' fill='%230a1428'/%3E%3Ccircle cx='19' cy='16' r='1.2' fill='%230a1428'/%3E%3Cpath d='M16 9V5l3 2z' fill='%23c5a468'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="#top">
+      <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M16 25c-5.2 0-8.4-3.5-8.4-7.8C7.6 12.6 11.4 9 16 9s8.4 3.6 8.4 8.2C24.4 21.5 21.2 25 16 25z" fill="none" stroke="#c5a468" stroke-width="1.2"/>
+        <path d="M16 9.2V5.6l3.1 1.9z" fill="#c5a468"/>
+        <path d="M10.6 12.4c-1.6-1.5-4-2-4.6-1.3-.6.7.6 2.3 2.2 3" fill="none" stroke="#8ea5da" stroke-width="1.1" stroke-linecap="round"/>
+        <path d="M21.4 12.4c1.6-1.5 4-2 4.6-1.3.6.7-.6 2.3-2.2 3" fill="none" stroke="#8ea5da" stroke-width="1.1" stroke-linecap="round"/>
+        <path d="M12.4 16.6h2.2M17.4 16.6h2.2" stroke="#f8f6f0" stroke-width="1.1" stroke-linecap="round"/>
+        <path d="M14.4 20.2c1 .7 2.2.7 3.2 0" fill="none" stroke="#8ea5da" stroke-width="1" stroke-linecap="round"/>
+      </svg>
+      小困插件工坊
+    </a>
+    <nav>
+      <a href="#plugins">插件</a>
+      <a href="#gallery">效果</a>
+      <a href="#install">安装</a>
+    </nav>
+    <a class="gh" href="https://github.com/Valorine97417" target="_blank" rel="noopener">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.4 7.4 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+      Valorine97417
+    </a>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+
+  <!-- ══ Hero ══ -->
+  <section class="hero" style="padding-top:74px">
+    <div>
+      <p class="kicker">DeepSeek Harness · Maid Plugin Suite</p>
+      <h1>装一个包，<br>走到哪都是<em>小困</em>。</h1>
+      <p class="lede">
+        这几个插件是给小困（DeepSeek Harness 的女仆助理）做的外挂：
+        <b>人设与记忆</b>、<b>视觉渲染</b>、<b>生成驱动</b>、<b>维护补丁</b>。
+        换台电脑、换个 profile，装上它们，小困还是原来那个小困。
+      </p>
+      <div class="cta">
+        <button class="btn primary" onclick="document.getElementById('plugins').scrollIntoView()">看插件</button>
+        <button class="btn" onclick="document.getElementById('install').scrollIntoView()">怎么装</button>
+      </div>
+    </div>
+    <figure class="frame" style="margin:0">
+      <img src="assets/img/vcp-1.jpg" alt="VCP 视觉通感协议渲染效果：深蓝星空下的三轨卫星动画卡片" loading="eager">
+    </figure>
+  </section>
+
+  <!-- ══ 统计 ══ -->
+  <div class="stats">
+    <div class="stat"><b class="num">7</b><span>插件</span></div>
+    <div class="stat"><b class="num">5</b><span>公开仓库</span></div>
+    <div class="stat"><b class="num">MIT</b><span>许可</span></div>
+    <div class="stat"><b class="num">100%</b><span>简体中文文档</span></div>
+  </div>
+
+  <div class="lace" aria-hidden="true">
+    <svg width="240" height="12" viewBox="0 0 240 12"><path d="M0 6h96M144 6h96" stroke="#c5a468" stroke-opacity=".35" stroke-width="1"/><path d="M120 1l5 5-5 5-5-5z" fill="none" stroke="#c5a468" stroke-width="1"/><circle cx="106" cy="6" r="1.6" fill="#c5a468"/><circle cx="134" cy="6" r="1.6" fill="#c5a468"/></svg>
+  </div>
+
+  <!-- ══ 插件 ══ -->
+  <section id="plugins">
+    <div class="sec-head">
+      <h2>插件一览</h2>
+      <div class="rule"></div>
+      <p>七个包，各管一摊</p>
+    </div>
+
+    <div class="filters" id="filters">
+      <button class="chip on" data-cat="all">全部</button>
+      <button class="chip" data-cat="core">人设与记忆</button>
+      <button class="chip" data-cat="visual">视觉与渲染</button>
+      <button class="chip" data-cat="tool">环境与工具</button>
+      <button class="chip" data-cat="care">维护层</button>
+    </div>
+
+    <div class="grid" id="grid">
+
+      <!-- preset -->
+      <article class="pcard" data-cat="core">
+        <div class="pc-top">
+          <span class="pc-icon"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2l2.4 5.2L18 8l-4 3.9.9 5.6L10 14.8 5.1 17.5 6 11.9 2 8l5.6-.8z" fill="none" stroke="#c5a468" stroke-width="1.2" stroke-linejoin="round"/></svg></span>
+          <div>
+            <div class="pc-name">dsh-maid-preset</div>
+            <div class="pc-sub">人设与记忆</div>
+          </div>
+          <span class="pc-ver num">v0.7.3</span>
+        </div>
+        <p class="pc-desc">装一个包，走到哪台电脑都是小困。</p>
+        <ul class="pc-feat">
+          <li><b>全局女仆人设</b>：形象、口吻、称「老大」、自称「小困」，连思考过程都是中文女仆腔</li>
+          <li><b>内置记忆</b>：meow-memory 代码随包，不用另外装</li>
+          <li><b>女仆预设</b>：maid 预设随包落地，开箱即用</li>
+        </ul>
+        <div class="cmd"><code>dsh plugin --profile desktop add github:Valorine97417/dsh-maid-preset</code><button class="copy">复制</button></div>
+        <div class="pc-foot"><span class="tag">公开</span><a href="https://github.com/Valorine97417/dsh-maid-preset" target="_blank" rel="noopener">仓库 →</a></div>
+      </article>
+
+      <!-- vcp -->
+      <article class="pcard" data-cat="visual">
+        <div class="pc-top">
+          <span class="pc-icon"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><rect x="2.5" y="3.5" width="15" height="13" rx="2" fill="none" stroke="#c5a468" stroke-width="1.2"/><path d="M5.5 7.5h5M5.5 10.5h9M5.5 13.5h6" stroke="#8ea5da" stroke-width="1.1" stroke-linecap="round"/></svg></span>
+          <div>
+            <div class="pc-name">dsh-maid-vcp</div>
+            <div class="pc-sub">视觉与渲染</div>
+          </div>
+          <span class="pc-ver num">v0.6.10</span>
+        </div>
+        <p class="pc-desc">让消息里的 HTML 真正被渲染出来——卡片、图表、公式、装帧。</p>
+        <ul class="pc-feat">
+          <li><b>HTML 真渲染</b>：SVG / Mermaid / KaTeX 全部支持</li>
+          <li><b>vcp-fast 引擎</b>：缓存命中后渲染加速 1200~6800 倍</li>
+          <li><b>内置 7 款开源字体</b>与设计规范注入，任何电脑、任何 agent 即插即用</li>
+        </ul>
+        <div class="cmd"><code>node patch/install-all.cjs</code><button class="copy">复制</button></div>
+        <div class="pc-foot"><span class="tag">公开</span><a href="https://github.com/Valorine97417/dsh-maid-vcp" target="_blank" rel="noopener">仓库 →</a></div>
+      </article>
+
+      <!-- scenery -->
+      <article class="pcard" data-cat="visual">
+        <div class="pc-top">
+          <span class="pc-icon"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M2.5 13.5l4-4.5 3 3 3-4 5 5.5z" fill="none" stroke="#c5a468" stroke-width="1.2" stroke-linejoin="round"/><circle cx="6.5" cy="6" r="1.6" fill="none" stroke="#8ea5da" stroke-width="1.1"/></svg></span>
+          <div>
+            <div class="pc-name">dsh-maid-scenery</div>
+            <div class="pc-sub">视觉与渲染</div>
+          </div>
+          <span class="pc-ver num">v0.2.2</span>
+        </div>
+        <p class="pc-desc">深海女仆工坊：视频背景、静态画主题、融合切换三合一。</p>
+        <ul class="pc-feat">
+          <li>视频背景 / 静态画主题 / 融合切换，三种皮肤形态一套管</li>
+          <li>可拖拽吸附的聊天背景面板</li>
+          <li>配套全在包里，卸载其它插件也不影响</li>
+        </ul>
+        <div class="cmd"><code>dsh plugin --profile desktop add "github:Valorine97417/dsh-maid-scenery"</code><button class="copy">复制</button></div>
+        <div class="pc-foot"><span class="tag priv">私有</span><a href="https://github.com/Valorine97417/dsh-maid-scenery" target="_blank" rel="noopener">仓库 →</a></div>
+      </article>
+
+      <!-- comfyui -->
+      <article class="pcard" data-cat="tool">
+        <div class="pc-top">
+          <span class="pc-icon"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="3" fill="none" stroke="#c5a468" stroke-width="1.2"/><path d="M10 2v3.2M10 14.8V18M2 10h3.2M14.8 10H18M4.4 4.4l2.3 2.3M13.3 13.3l2.3 2.3M15.6 4.4l-2.3 2.3M6.7 13.3l-2.3 2.3" stroke="#8ea5da" stroke-width="1.1" stroke-linecap="round"/></svg></span>
+          <div>
+            <div class="pc-name">dsh-maid-comfyui</div>
+            <div class="pc-sub">环境与工具</div>
+          </div>
+          <span class="pc-ver num">v0.5.4</span>
+        </div>
+        <p class="pc-desc">让 Agent 智能驱动本地或远程 ComfyUI 生成任何内容。</p>
+        <ul class="pc-feat">
+          <li><b>工作流 / 资产 / 队列</b>三页签面板</li>
+          <li>每个工作流一套技能包——Agent 先读文档再跑，不瞎跑</li>
+          <li>同源媒体代理，生成的图与视频直接回显</li>
+        </ul>
+        <div class="cmd"><code>dsh plugin --profile web add dsh-maid-comfyui</code><button class="copy">复制</button></div>
+        <div class="pc-foot"><span class="tag priv">私有</span><a href="https://github.com/Valorine97417/dsh-maid-comfyui" target="_blank" rel="noopener">仓库 →</a></div>
+      </article>
+
+      <!-- tts-fix -->
+      <article class="pcard" data-cat="care">
+        <div class="pc-top">
+          <span class="pc-icon"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3.5 8v4h2.6L9.5 15V5L6.1 8z" fill="none" stroke="#c5a468" stroke-width="1.2" stroke-linejoin="round"/><path d="M12.4 7.2a4 4 0 0 1 0 5.6M14.8 5a7 7 0 0 1 0 10" fill="none" stroke="#8ea5da" stroke-width="1.1" stroke-linecap="round"/></svg></span>
+          <div>
+            <div class="pc-name">dsh-maid-tts-fix</div>
+            <div class="pc-sub">维护层</div>
+          </div>
+          <span class="pc-ver num">v0.2.0</span>
+        </div>
+        <p class="pc-desc">朗读与音色维护层——让 VCP 卡片的 CSS 不再被念出来。</p>
+        <ul class="pc-feat">
+          <li><b>跨行 style/script 剥离</b>，卡片只念该念的字</li>
+          <li><b>启动自检三项</b>：登记 / hash / 落盘，补丁死没死一眼可见</li>
+          <li>音色提示词与参照样本说明收在这里</li>
+        </ul>
+        <div class="cmd"><code>dsh plugin --profile desktop add github:Valorine97417/dsh-maid-tts-fix</code><button class="copy">复制</button></div>
+        <div class="pc-foot"><span class="tag">公开</span><a href="https://github.com/Valorine97417/dsh-maid-tts-fix" target="_blank" rel="noopener">仓库 →</a></div>
+      </article>
+
+      <!-- patch-kit -->
+      <article class="pcard" data-cat="care">
+        <div class="pc-top">
+          <span class="pc-icon"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M12.6 3.2a4.2 4.2 0 0 0-5.4 5.4L3 12.8V17h4.2l4.2-4.2a4.2 4.2 0 0 0 5.4-5.4l-2.6 2.6-2.2-.6-.6-2.2z" fill="none" stroke="#c5a468" stroke-width="1.2" stroke-linejoin="round"/></svg></span>
+          <div>
+            <div class="pc-name">dsh-maid-patch-kit</div>
+            <div class="pc-sub">维护层</div>
+          </div>
+          <span class="pc-ver num">v0.1.0</span>
+        </div>
+        <p class="pc-desc">给社区插件打不阻碍上游更新的维护补丁。</p>
+        <ul class="pc-feat">
+          <li>补丁不阻塞上游更新——上游发新版照样能升</li>
+          <li>每次启动体检补丁是否还活着</li>
+          <li>上游停更的，收录接管</li>
+        </ul>
+        <div class="cmd"><code>dsh plugin --profile desktop add github:Valorine97417/dsh-maid-patch-kit</code><button class="copy">复制</button></div>
+        <div class="pc-foot"><span class="tag">公开</span><a href="https://github.com/Valorine97417/dsh-maid-patch-kit" target="_blank" rel="noopener">仓库 →</a></div>
+      </article>
+
+      <!-- lane-fix -->
+      <article class="pcard" data-cat="tool">
+        <div class="pc-top">
+          <span class="pc-icon"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M2.5 15.5c3-6 5-6 7.5 0 2.5-6 4.5-6 7.5 0" fill="none" stroke="#c5a468" stroke-width="1.2" stroke-linecap="round"/><circle cx="10" cy="5.5" r="2" fill="none" stroke="#8ea5da" stroke-width="1.1"/></svg></span>
+          <div>
+            <div class="pc-name">dsh-maid-lane-fix</div>
+            <div class="pc-sub">环境与工具</div>
+          </div>
+          <span class="pc-ver num">v0.2.0</span>
+        </div>
+        <p class="pc-desc">免费车道中间层与上游补丁器。</p>
+        <ul class="pc-feat">
+          <li>给 dsh-our-free-model 的出网请求套一层<b>指纹规范化</b></li>
+          <li>可重放、可回滚的补丁器</li>
+          <li>修好 EAC 通道测不出首字延迟的问题</li>
+        </ul>
+        <div class="cmd"><code>dsh plugin --profile desktop add "github:Valorine97417/dsh-maid-lane-fix"</code><button class="copy">复制</button></div>
+        <div class="pc-foot"><span class="tag">公开</span><a href="https://github.com/Valorine97417/dsh-maid-lane-fix" target="_blank" rel="noopener">仓库 →</a></div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ══ 画廊 ══ -->
+  <section id="gallery">
+    <div class="sec-head">
+      <h2>效果</h2>
+      <div class="rule"></div>
+      <p>点开看大图</p>
+    </div>
+    <div class="gal">
+      <figure class="gitem" data-full="assets/img/vcp-1.jpg"><img src="assets/img/vcp-1.jpg" alt="VCP：三轨卫星动画卡片" loading="lazy"><figcaption class="gcap"><b>VCP</b> · 三轨卫星动画卡片</figcaption></figure>
+      <figure class="gitem" data-full="assets/img/vcp-2.jpg"><img src="assets/img/vcp-2.jpg" alt="VCP：流式渲染卡片" loading="lazy"><figcaption class="gcap"><b>VCP</b> · 流式渲染</figcaption></figure>
+      <figure class="gitem" data-full="assets/img/vcp-3.jpg"><img src="assets/img/vcp-3.jpg" alt="VCP：图表与公式" loading="lazy"><figcaption class="gcap"><b>VCP</b> · 图表与公式</figcaption></figure>
+      <figure class="gitem" data-full="assets/img/vcp-4.jpg"><img src="assets/img/vcp-4.jpg" alt="VCP：装帧卡" loading="lazy"><figcaption class="gcap"><b>VCP</b> · 装帧</figcaption></figure>
+      <figure class="gitem" data-full="assets/img/vcp-5.jpg"><img src="assets/img/vcp-5.jpg" alt="VCP：交互组件" loading="lazy"><figcaption class="gcap"><b>VCP</b> · 交互组件</figcaption></figure>
+      <figure class="gitem" data-full="assets/img/comfyui-panel.png"><img src="assets/img/comfyui-panel.png" alt="ComfyUI 驱动：工作流面板" loading="lazy"><figcaption class="gcap"><b>ComfyUI</b> · 工作流面板</figcaption></figure>
+      <figure class="gitem" data-full="assets/img/comfyui-loadarea.png"><img src="assets/img/comfyui-loadarea.png" alt="ComfyUI 驱动：资产与载入区" loading="lazy"><figcaption class="gcap"><b>ComfyUI</b> · 资产载入区</figcaption></figure>
+      <figure class="gitem" data-full="assets/img/scenery-dark.webp"><img src="assets/img/scenery-dark.webp" alt="深海女仆工坊：暗色主题" loading="lazy"><figcaption class="gcap"><b>Scenery</b> · 暗色主题</figcaption></figure>
+      <figure class="gitem" data-full="assets/img/scenery-light.webp"><img src="assets/img/scenery-light.webp" alt="深海女仆工坊：亮色主题" loading="lazy"><figcaption class="gcap"><b>Scenery</b> · 亮色主题</figcaption></figure>
+      <figure class="gitem" data-full="assets/img/comfyui-settings.png"><img src="assets/img/comfyui-settings.png" alt="ComfyUI 驱动：设置面板" loading="lazy"><figcaption class="gcap"><b>ComfyUI</b> · 设置</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- ══ 安装 ══ -->
+  <section id="install">
+    <div class="sec-head">
+      <h2>怎么装</h2>
+      <div class="rule"></div>
+      <p>三步，不用编译</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="n">STEP 01</div>
+        <h3>先有 DSH</h3>
+        <p>这套插件挂在 DeepSeek Harness 上。装好宿主、能跑 <code>dsh</code> 命令就行。</p>
+        <pre>dsh --version</pre>
+      </div>
+      <div class="step">
+        <div class="n">STEP 02</div>
+        <h3>装插件</h3>
+        <p>按上面的卡片复制命令。VCP 需要多跑一次一键安装器，把渲染能力打进前端。</p>
+        <pre>dsh plugin --profile desktop add \
+  github:Valorine97417/dsh-maid-preset</pre>
+      </div>
+      <div class="step">
+        <div class="n">STEP 03</div>
+        <h3>重启 DSH</h3>
+        <p>人设、记忆、皮肤、面板一次到位。之后换电脑，重跑一遍这两条命令即可。</p>
+        <pre>dsh plugin list</pre>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <span>小困插件工坊 · Valorine97417</span>
+      <span class="rule"></span>
+      <span>MIT License</span>
+      <a href="https://github.com/Valorine97417" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<div class="lb" id="lb">
+  <button id="lbClose" aria-label="关闭">×</button>
+  <img id="lbImg" src="" alt="">
+  <p id="lbCap"></p>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
