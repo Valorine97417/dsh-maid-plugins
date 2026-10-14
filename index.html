@@ -13,7 +13,10 @@
 </head>
 <body>
 
-<header class="top">
+<div class="progress" id="progress"></div>
+<div class="hero-glow" id="glow" aria-hidden="true"></div>
+
+<header class="top" id="top-bar">
   <div class="top-in">
     <a class="brand" href="#top">
       <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
@@ -26,10 +29,11 @@
       </svg>
       小困插件工坊
     </a>
-    <nav>
-      <a href="#plugins">插件</a>
-      <a href="#gallery">效果</a>
-      <a href="#install">安装</a>
+    <nav id="nav">
+      <a href="#plugins" data-sec="plugins">插件</a>
+      <a href="#gallery" data-sec="gallery">效果</a>
+      <a href="#try" data-sec="try">试一试</a>
+      <a href="#install" data-sec="install">安装</a>
     </nav>
     <a class="gh" href="https://github.com/Valorine97417" target="_blank" rel="noopener">
       <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.4 7.4 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
@@ -44,28 +48,28 @@
   <section class="hero" style="padding-top:74px">
     <div>
       <p class="kicker">DeepSeek Harness · Maid Plugin Suite</p>
-      <h1>装一个包，<br>走到哪都是<em>小困</em>。</h1>
+      <h1 id="heroTitle"><span id="tw">装一个包，<br>走到哪都是<em>小困</em>。</span><span class="caret" id="caret"></span></h1>
       <p class="lede">
         这几个插件是给小困（DeepSeek Harness 的女仆助理）做的外挂：
         <b>人设与记忆</b>、<b>视觉渲染</b>、<b>生成驱动</b>、<b>维护补丁</b>。
         换台电脑、换个 profile，装上它们，小困还是原来那个小困。
       </p>
       <div class="cta">
-        <button class="btn primary" onclick="document.getElementById('plugins').scrollIntoView()">看插件</button>
-        <button class="btn" onclick="document.getElementById('install').scrollIntoView()">怎么装</button>
+        <button class="btn primary" data-go="plugins">看插件</button>
+        <button class="btn" data-go="try">试一试</button>
       </div>
     </div>
-    <figure class="frame" style="margin:0">
+    <figure class="frame" id="heroFrame" style="margin:0">
       <img src="assets/img/vcp-1.jpg" alt="VCP 视觉通感协议渲染效果：深蓝星空下的三轨卫星动画卡片" loading="eager">
     </figure>
   </section>
 
   <!-- ══ 统计 ══ -->
-  <div class="stats">
-    <div class="stat"><b class="num">7</b><span>插件</span></div>
-    <div class="stat"><b class="num">5</b><span>公开仓库</span></div>
-    <div class="stat"><b class="num">MIT</b><span>许可</span></div>
-    <div class="stat"><b class="num">100%</b><span>简体中文文档</span></div>
+  <div class="stats reveal" id="stats">
+    <div class="stat"><b class="num" data-to="7">0</b><span>插件</span></div>
+    <div class="stat"><b class="num" data-to="5">0</b><span>公开仓库</span></div>
+    <div class="stat"><b>MIT</b><span>许可</span></div>
+    <div class="stat"><b class="num" data-to="100" data-suffix="%">0%</b><span>简体中文文档</span></div>
   </div>
 
   <div class="lace" aria-hidden="true">
@@ -74,7 +78,7 @@
 
   <!-- ══ 插件 ══ -->
   <section id="plugins">
-    <div class="sec-head">
+    <div class="sec-head reveal">
       <h2>插件一览</h2>
       <div class="rule"></div>
       <p>七个包，各管一摊</p>
@@ -91,7 +95,7 @@
     <div class="grid" id="grid">
 
       <!-- preset -->
-      <article class="pcard" data-cat="core">
+      <article class="pcard reveal" data-cat="core">
         <div class="pc-top">
           <span class="pc-icon"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2l2.4 5.2L18 8l-4 3.9.9 5.6L10 14.8 5.1 17.5 6 11.9 2 8l5.6-.8z" fill="none" stroke="#c5a468" stroke-width="1.2" stroke-linejoin="round"/></svg></span>
           <div>
@@ -111,7 +115,7 @@
       </article>
 
       <!-- vcp -->
-      <article class="pcard" data-cat="visual">
+      <article class="pcard reveal" data-cat="visual">
         <div class="pc-top">
           <span class="pc-icon"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><rect x="2.5" y="3.5" width="15" height="13" rx="2" fill="none" stroke="#c5a468" stroke-width="1.2"/><path d="M5.5 7.5h5M5.5 10.5h9M5.5 13.5h6" stroke="#8ea5da" stroke-width="1.1" stroke-linecap="round"/></svg></span>
           <div>
@@ -131,7 +135,7 @@
       </article>
 
       <!-- scenery -->
-      <article class="pcard" data-cat="visual">
+      <article class="pcard reveal" data-cat="visual">
         <div class="pc-top">
           <span class="pc-icon"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M2.5 13.5l4-4.5 3 3 3-4 5 5.5z" fill="none" stroke="#c5a468" stroke-width="1.2" stroke-linejoin="round"/><circle cx="6.5" cy="6" r="1.6" fill="none" stroke="#8ea5da" stroke-width="1.1"/></svg></span>
           <div>
@@ -151,7 +155,7 @@
       </article>
 
       <!-- comfyui -->
-      <article class="pcard" data-cat="tool">
+      <article class="pcard reveal" data-cat="tool">
         <div class="pc-top">
           <span class="pc-icon"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="3" fill="none" stroke="#c5a468" stroke-width="1.2"/><path d="M10 2v3.2M10 14.8V18M2 10h3.2M14.8 10H18M4.4 4.4l2.3 2.3M13.3 13.3l2.3 2.3M15.6 4.4l-2.3 2.3M6.7 13.3l-2.3 2.3" stroke="#8ea5da" stroke-width="1.1" stroke-linecap="round"/></svg></span>
           <div>
@@ -171,7 +175,7 @@
       </article>
 
       <!-- tts-fix -->
-      <article class="pcard" data-cat="care">
+      <article class="pcard reveal" data-cat="care">
         <div class="pc-top">
           <span class="pc-icon"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3.5 8v4h2.6L9.5 15V5L6.1 8z" fill="none" stroke="#c5a468" stroke-width="1.2" stroke-linejoin="round"/><path d="M12.4 7.2a4 4 0 0 1 0 5.6M14.8 5a7 7 0 0 1 0 10" fill="none" stroke="#8ea5da" stroke-width="1.1" stroke-linecap="round"/></svg></span>
           <div>
@@ -191,7 +195,7 @@
       </article>
 
       <!-- patch-kit -->
-      <article class="pcard" data-cat="care">
+      <article class="pcard reveal" data-cat="care">
         <div class="pc-top">
           <span class="pc-icon"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M12.6 3.2a4.2 4.2 0 0 0-5.4 5.4L3 12.8V17h4.2l4.2-4.2a4.2 4.2 0 0 0 5.4-5.4l-2.6 2.6-2.2-.6-.6-2.2z" fill="none" stroke="#c5a468" stroke-width="1.2" stroke-linejoin="round"/></svg></span>
           <div>
@@ -211,7 +215,7 @@
       </article>
 
       <!-- lane-fix -->
-      <article class="pcard" data-cat="tool">
+      <article class="pcard reveal" data-cat="tool">
         <div class="pc-top">
           <span class="pc-icon"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M2.5 15.5c3-6 5-6 7.5 0 2.5-6 4.5-6 7.5 0" fill="none" stroke="#c5a468" stroke-width="1.2" stroke-linecap="round"/><circle cx="10" cy="5.5" r="2" fill="none" stroke="#8ea5da" stroke-width="1.1"/></svg></span>
           <div>
@@ -235,47 +239,69 @@
 
   <!-- ══ 画廊 ══ -->
   <section id="gallery">
-    <div class="sec-head">
+    <div class="sec-head reveal">
       <h2>效果</h2>
       <div class="rule"></div>
-      <p>点开看大图</p>
+      <p>点开看大图，← → 翻页</p>
     </div>
-    <div class="gal">
-      <figure class="gitem" data-full="assets/img/vcp-1.jpg"><img src="assets/img/vcp-1.jpg" alt="VCP：三轨卫星动画卡片" loading="lazy"><figcaption class="gcap"><b>VCP</b> · 三轨卫星动画卡片</figcaption></figure>
-      <figure class="gitem" data-full="assets/img/vcp-2.jpg"><img src="assets/img/vcp-2.jpg" alt="VCP：流式渲染卡片" loading="lazy"><figcaption class="gcap"><b>VCP</b> · 流式渲染</figcaption></figure>
-      <figure class="gitem" data-full="assets/img/vcp-3.jpg"><img src="assets/img/vcp-3.jpg" alt="VCP：图表与公式" loading="lazy"><figcaption class="gcap"><b>VCP</b> · 图表与公式</figcaption></figure>
-      <figure class="gitem" data-full="assets/img/vcp-4.jpg"><img src="assets/img/vcp-4.jpg" alt="VCP：装帧卡" loading="lazy"><figcaption class="gcap"><b>VCP</b> · 装帧</figcaption></figure>
-      <figure class="gitem" data-full="assets/img/vcp-5.jpg"><img src="assets/img/vcp-5.jpg" alt="VCP：交互组件" loading="lazy"><figcaption class="gcap"><b>VCP</b> · 交互组件</figcaption></figure>
-      <figure class="gitem" data-full="assets/img/comfyui-panel.png"><img src="assets/img/comfyui-panel.png" alt="ComfyUI 驱动：工作流面板" loading="lazy"><figcaption class="gcap"><b>ComfyUI</b> · 工作流面板</figcaption></figure>
-      <figure class="gitem" data-full="assets/img/comfyui-loadarea.png"><img src="assets/img/comfyui-loadarea.png" alt="ComfyUI 驱动：资产与载入区" loading="lazy"><figcaption class="gcap"><b>ComfyUI</b> · 资产载入区</figcaption></figure>
-      <figure class="gitem" data-full="assets/img/scenery-dark.webp"><img src="assets/img/scenery-dark.webp" alt="深海女仆工坊：暗色主题" loading="lazy"><figcaption class="gcap"><b>Scenery</b> · 暗色主题</figcaption></figure>
-      <figure class="gitem" data-full="assets/img/scenery-light.webp"><img src="assets/img/scenery-light.webp" alt="深海女仆工坊：亮色主题" loading="lazy"><figcaption class="gcap"><b>Scenery</b> · 亮色主题</figcaption></figure>
-      <figure class="gitem" data-full="assets/img/comfyui-settings.png"><img src="assets/img/comfyui-settings.png" alt="ComfyUI 驱动：设置面板" loading="lazy"><figcaption class="gcap"><b>ComfyUI</b> · 设置</figcaption></figure>
+    <div class="gal" id="gal">
+      <figure class="gitem reveal" data-full="assets/img/vcp-1.jpg"><img src="assets/img/vcp-1.jpg" alt="VCP：三轨卫星动画卡片" loading="lazy"><figcaption class="gcap"><b>VCP</b> · 三轨卫星动画卡片</figcaption></figure>
+      <figure class="gitem reveal" data-full="assets/img/vcp-2.jpg"><img src="assets/img/vcp-2.jpg" alt="VCP：流式渲染卡片" loading="lazy"><figcaption class="gcap"><b>VCP</b> · 流式渲染</figcaption></figure>
+      <figure class="gitem reveal" data-full="assets/img/vcp-3.jpg"><img src="assets/img/vcp-3.jpg" alt="VCP：图表与公式" loading="lazy"><figcaption class="gcap"><b>VCP</b> · 图表与公式</figcaption></figure>
+      <figure class="gitem reveal" data-full="assets/img/vcp-4.jpg"><img src="assets/img/vcp-4.jpg" alt="VCP：装帧卡" loading="lazy"><figcaption class="gcap"><b>VCP</b> · 装帧</figcaption></figure>
+      <figure class="gitem reveal" data-full="assets/img/vcp-5.jpg"><img src="assets/img/vcp-5.jpg" alt="VCP：交互组件" loading="lazy"><figcaption class="gcap"><b>VCP</b> · 交互组件</figcaption></figure>
+      <figure class="gitem reveal" data-full="assets/img/comfyui-panel.png"><img src="assets/img/comfyui-panel.png" alt="ComfyUI 驱动：工作流面板" loading="lazy"><figcaption class="gcap"><b>ComfyUI</b> · 工作流面板</figcaption></figure>
+      <figure class="gitem reveal" data-full="assets/img/comfyui-loadarea.png"><img src="assets/img/comfyui-loadarea.png" alt="ComfyUI 驱动：资产与载入区" loading="lazy"><figcaption class="gcap"><b>ComfyUI</b> · 资产载入区</figcaption></figure>
+      <figure class="gitem reveal" data-full="assets/img/scenery-dark.webp"><img src="assets/img/scenery-dark.webp" alt="深海女仆工坊：暗色主题" loading="lazy"><figcaption class="gcap"><b>Scenery</b> · 暗色主题</figcaption></figure>
+      <figure class="gitem reveal" data-full="assets/img/scenery-light.webp"><img src="assets/img/scenery-light.webp" alt="深海女仆工坊：亮色主题" loading="lazy"><figcaption class="gcap"><b>Scenery</b> · 亮色主题</figcaption></figure>
+      <figure class="gitem reveal" data-full="assets/img/comfyui-settings.png"><img src="assets/img/comfyui-settings.png" alt="ComfyUI 驱动：设置面板" loading="lazy"><figcaption class="gcap"><b>ComfyUI</b> · 设置</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- ══ 试一试 ══ -->
+  <section id="try">
+    <div class="sec-head reveal">
+      <h2>试一试</h2>
+      <div class="rule"></div>
+      <p>点命令，看它跑</p>
+    </div>
+    <div class="term reveal">
+      <div class="term-bar">
+        <span class="tdot g"></span><span class="tdot"></span><span class="tdot"></span>
+        <span class="term-title">小困的工坊终端 · 演示输出</span>
+      </div>
+      <div class="term-body" id="termBody"></div>
+      <div class="term-cmds" id="termCmds">
+        <button class="tbtn" data-cmd="version">dsh --version</button>
+        <button class="tbtn" data-cmd="list">dsh plugin list</button>
+        <button class="tbtn" data-cmd="add">dsh plugin add dsh-maid-preset</button>
+        <button class="tbtn ghost" data-cmd="clear">清屏</button>
+      </div>
     </div>
   </section>
 
   <!-- ══ 安装 ══ -->
   <section id="install">
-    <div class="sec-head">
+    <div class="sec-head reveal">
       <h2>怎么装</h2>
       <div class="rule"></div>
       <p>三步，不用编译</p>
     </div>
     <div class="steps">
-      <div class="step">
+      <div class="step reveal">
         <div class="n">STEP 01</div>
         <h3>先有 DSH</h3>
         <p>这套插件挂在 DeepSeek Harness 上。装好宿主、能跑 <code>dsh</code> 命令就行。</p>
         <pre>dsh --version</pre>
       </div>
-      <div class="step">
+      <div class="step reveal">
         <div class="n">STEP 02</div>
         <h3>装插件</h3>
         <p>按上面的卡片复制命令。VCP 需要多跑一次一键安装器，把渲染能力打进前端。</p>
         <pre>dsh plugin --profile desktop add \
   github:Valorine97417/dsh-maid-preset</pre>
       </div>
-      <div class="step">
+      <div class="step reveal">
         <div class="n">STEP 03</div>
         <h3>重启 DSH</h3>
         <p>人设、记忆、皮肤、面板一次到位。之后换电脑，重跑一遍这两条命令即可。</p>
@@ -298,10 +324,23 @@
 </footer>
 
 <div class="lb" id="lb">
-  <button id="lbClose" aria-label="关闭">×</button>
+  <button class="x" id="lbClose" aria-label="关闭">×</button>
+  <button class="nv prev" id="lbPrev" aria-label="上一张">‹</button>
   <img id="lbImg" src="" alt="">
   <p id="lbCap"></p>
+  <span class="cnt num" id="lbCnt"></span>
+  <button class="nv next" id="lbNext" aria-label="下一张">›</button>
 </div>
+
+<button class="pet" id="pet" aria-label="小困">
+  <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
+    <path d="M16 25c-5.2 0-8.4-3.5-8.4-7.8C7.6 12.6 11.4 9 16 9s8.4 3.6 8.4 8.2C24.4 21.5 21.2 25 16 25z" fill="none" stroke="#c5a468" stroke-width="1.2"/>
+    <path d="M16 9.2V5.6l3.1 1.9z" fill="#c5a468"/>
+    <path d="M12.4 16.6h2.2M17.4 16.6h2.2" stroke="#8ea5da" stroke-width="1.1" stroke-linecap="round"/>
+    <path d="M14.4 20.2c1 .7 2.2.7 3.2 0" fill="none" stroke="#8ea5da" stroke-width="1" stroke-linecap="round"/>
+  </svg>
+</button>
+<div class="bubble" id="bubble"></div>
 
 <script src="assets/app.js"></script>
 </body>
