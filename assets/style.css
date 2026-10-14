@@ -260,6 +260,7 @@ section { padding: 68px 0 8px; }
 
 /* ── 画廊（多列瀑布流，保原图比例不裁切） ── */
 .gal { columns: 3; column-gap: 14px; }
+.gal-wide { columns: 2; column-gap: 14px; margin-top: 14px; }
 .gitem {
   border: 1px solid var(--line); border-radius: 12px; overflow: hidden; cursor: zoom-in;
   background: var(--card); break-inside: avoid; margin: 0 0 14px; display: block;
