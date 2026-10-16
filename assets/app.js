@@ -218,13 +218,13 @@
     ],
     list: [
       { t: '$ dsh plugin list', c: 'cmdline' },
-      { t: 'dsh-maid-preset    v0.7.3   女仆预设 + 全局人设 + 内置记忆', c: '' },
-      { t: 'dsh-maid-vcp       v0.6.10  VCP 视觉通感渲染', c: '' },
-      { t: 'dsh-maid-scenery   v0.2.2   深海女仆工坊（皮肤）', c: '' },
-      { t: 'dsh-maid-comfyui   v0.5.4   ComfyUI 驱动', c: '' },
-      { t: 'dsh-maid-tts-fix   v0.2.0   朗读维护层', c: '' },
+      { t: 'dsh-maid-preset    v0.7.9   女仆预设 + 全局人设 + 内置记忆', c: '' },
+      { t: 'dsh-maid-vcp       v0.6.14  VCP 视觉通感渲染', c: '' },
+      { t: 'dsh-maid-scenery   v0.2.3   深海女仆工坊（皮肤）', c: '' },
+      { t: 'dsh-maid-comfyui   v0.5.5   ComfyUI 驱动', c: '' },
+      { t: 'dsh-maid-tts-fix   v0.6.5   朗读维护层', c: '' },
       { t: 'dsh-maid-patch-kit v0.1.0   社区插件维护补丁', c: '' },
-      { t: 'dsh-maid-lane-fix  v0.2.0   免费车道中间层', c: '' },
+      { t: 'dsh-maid-lane-fix  v0.3.1   免费车道中间层', c: '' },
       { t: '7 个插件，全部就绪。', c: 'hi' }
     ],
     add: [

@@ -17,13 +17,13 @@
 
 | 插件 | 版本 | 分类 | 一句话 |
 |---|---|---|---|
-| [dsh-maid-preset](https://github.com/Valorine97417/dsh-maid-preset) | 0.7.3 | 人设与记忆 | 自带 maid 预设、全局女仆人设与内置记忆 meow-memory。装一个包，走到哪都是小困。 |
-| [dsh-maid-vcp](https://github.com/Valorine97417/dsh-maid-vcp) | 0.6.10 | 视觉与渲染 | 消息 HTML 渲染 + vcp-fast 加速引擎 + 内置 7 款开源字体 + 设计规范注入。 |
-| [dsh-maid-scenery](https://github.com/Valorine97417/dsh-maid-scenery) | 0.2.2 | 视觉与渲染 | 深海女仆工坊：视频背景、静态画主题、融合切换三合一。 |
-| [dsh-maid-comfyui](https://github.com/Valorine97417/dsh-maid-comfyui) | 0.5.4 | 环境与工具 | 让 Agent 智能驱动本地或远程 ComfyUI 生成任何内容。 |
-| [dsh-maid-tts-fix](https://github.com/Valorine97417/dsh-maid-tts-fix) | 0.2.0 | 维护层 | 朗读与音色维护层：跨行 style/script 剥离 + 启动自检。 |
+| [dsh-maid-preset](https://github.com/Valorine97417/dsh-maid-preset) | 0.7.9 | 人设与记忆 | 自带 maid 预设、全局女仆人设与内置记忆 meow-memory。装一个包，走到哪都是小困。 |
+| [dsh-maid-vcp](https://github.com/Valorine97417/dsh-maid-vcp) | 0.6.14 | 视觉与渲染 | 消息 HTML 渲染 + vcp-fast 加速引擎 + 内置 7 款开源字体 + 设计规范注入。 |
+| [dsh-maid-scenery](https://github.com/Valorine97417/dsh-maid-scenery) | 0.2.3 | 视觉与渲染 | 深海女仆工坊：视频背景、静态画主题、融合切换三合一。 |
+| [dsh-maid-comfyui](https://github.com/Valorine97417/dsh-maid-comfyui) | 0.5.5 | 环境与工具 | 让 Agent 智能驱动本地或远程 ComfyUI 生成任何内容。 |
+| [dsh-maid-tts-fix](https://github.com/Valorine97417/dsh-maid-tts-fix) | 0.6.5 | 维护层 | 朗读与音色维护层：跨行 style/script 剥离 + 卡片剥离兜底 + 启动自检。 |
 | [dsh-maid-patch-kit](https://github.com/Valorine97417/dsh-maid-patch-kit) | 0.1.0 | 维护层 | 给社区插件打不阻碍上游更新的维护补丁。 |
-| [dsh-maid-lane-fix](https://github.com/Valorine97417/dsh-maid-lane-fix) | 0.2.0 | 环境与工具 | 免费车道中间层与上游补丁器。 |
+| [dsh-maid-lane-fix](https://github.com/Valorine97417/dsh-maid-lane-fix) | 0.3.1 | 环境与工具 | 免费车道中间层与上游补丁器。 |
 
 其中 `dsh-maid-scenery` 与 `dsh-maid-comfyui` 为私有仓库，未登录访问会 404——卡片上已标「私有」。
 
